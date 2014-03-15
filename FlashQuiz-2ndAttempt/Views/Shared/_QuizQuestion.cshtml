@@ -1,0 +1,12 @@
+﻿@model FlashQuiz_2ndAttempt.Models.QuizQuestion
+
+<div class="question">
+    <h4>Question: @Model.Question </h4>
+    <div>
+        <p>Answer: @Model.Answer</p>
+        <p>WrongAnswer1: @Model.WrongAnswer1</p>
+        <p>WrongAnswer2: @Model.WrongAnswer2</p>
+        <p>WrongAnswer3: @Model.WrongAnswer3</p>
+    </div>
+    <div>@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) | @Html.ActionLink("Delete", "Delete", new { id = Model.Id })</div>
+</div>

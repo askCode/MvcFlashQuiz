@@ -1,0 +1,29 @@
+﻿@model FlashQuiz_2ndAttempt.Models.Quiz
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Quiz Content for @Model.QuizName</h2>
+
+@if (Model.QuizQuestions.Count() == 0)
+{
+    <p>
+        @Html.ActionLink("Add New Question", "Create", new { QuizId = Model.Id })
+    </p>
+}
+else
+{
+    @Html.Partial("_Questions", Model.QuizQuestions)
+
+    <p>
+        @Html.ActionLink("Add New Question", "Create", new { QuizId = Model.Id })
+    </p>
+
+}
+
+
+
+

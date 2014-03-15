@@ -1,0 +1,54 @@
+﻿@model FlashQuiz_2ndAttempt.Models.Quiz
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Quiz</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.QuizName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.QuizName)
+            @Html.ValidationMessageFor(model => model.QuizName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.QuizTopic)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.QuizTopic)
+            @Html.ValidationMessageFor(model => model.QuizTopic)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    
+}

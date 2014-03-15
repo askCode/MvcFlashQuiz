@@ -1,0 +1,12 @@
+﻿@model IEnumerable<FlashQuiz_2ndAttempt.Models.QuizListViewModel>
+
+
+@foreach (var item in Model)
+{
+    <h4> @item.QuizName</h4>
+    <div> @item.QuizTopic</div>
+    <p>  @Html.ActionLink("Number of Questions: " + item.NumberOfQuestions, "Index", "QuizQuestions", new {id = item.Id}, null) </p>
+    <p> Created by: @item.CreatedBy </p>
+    
+    <hr />
+}

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcFlashQuiz", "FlashQuiz-2ndAttempt\MvcFlashQuiz.csproj", "{FA349CFD-6C77-4E9A-B8F7-13453AC6B189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcFlashQuiz.Tests", "FlashQuiz-2ndAttempt.Tests\MvcFlashQuiz.Tests.csproj", "{87F49EED-72ED-4B99-B1D2-B6307ED2779F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://askcode.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = FlashQuiz-2ndAttempt\\MvcFlashQuiz.csproj
+		SccProjectName0 = FlashQuiz-2ndAttempt
+		SccLocalPath0 = FlashQuiz-2ndAttempt
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = FlashQuiz-2ndAttempt.Tests\\MvcFlashQuiz.Tests.csproj
+		SccProjectName2 = FlashQuiz-2ndAttempt.Tests
+		SccLocalPath2 = FlashQuiz-2ndAttempt.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA349CFD-6C77-4E9A-B8F7-13453AC6B189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA349CFD-6C77-4E9A-B8F7-13453AC6B189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA349CFD-6C77-4E9A-B8F7-13453AC6B189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA349CFD-6C77-4E9A-B8F7-13453AC6B189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F49EED-72ED-4B99-B1D2-B6307ED2779F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F49EED-72ED-4B99-B1D2-B6307ED2779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F49EED-72ED-4B99-B1D2-B6307ED2779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F49EED-72ED-4B99-B1D2-B6307ED2779F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

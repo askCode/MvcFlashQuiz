@@ -1,0 +1,23 @@
+﻿@*@model IEnumerable<FlashQuiz_2ndAttempt.Models.Quiz>*@
+@model IEnumerable<FlashQuiz_2ndAttempt.Models.QuizListViewModel>
+
+
+@{
+    ViewBag.Title = null;
+}
+
+<form method="get">
+    <input type="search" name="searchTerm" />
+    <input type="submit" value="Search by Quiz Topic" />
+</form>
+
+@foreach (var item in Model)
+{
+    <h4> @Html.ActionLink(item.QuizName, "Index", "QuizQuestions", new {id = item.Id}, null)</h4>
+    <h5> @Html.ActionLink(item.QuizName, "Quiz", "TakeQuiz", new {id = item.Id}, null)</h5>
+    <div> @item.QuizTopic</div>
+    <p> Number of Questions: @item.NumberOfQuestions</p>
+    <p> Created by: @item.CreatedBy </p>
+    
+    <hr />
+}

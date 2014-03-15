@@ -1,0 +1,36 @@
+﻿@model FlashQuiz_2ndAttempt.Models.Quiz
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Quiz</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuizName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuizName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuizTopic)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuizTopic)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
